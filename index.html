@@ -1,0 +1,62 @@
+<html>
+
+<head>
+    <title>Lab 1</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <form id="form">
+    <div class="background">
+        <div class="header">Мухамеджанов Артур Илдусович, P3214, вариант 2490</div>
+        <div class="row">
+            <div class="input">
+                Введите координату X
+                <input class="inputX" type="text" placeholder="-3..5" id="X" name="X" required  maxlength="15">
+                <div class="error" id="XError"></div>
+            </div>
+
+            <div class="input">
+                Введите координату Y
+                <input class="inputX" type="text" placeholder="-3..5" id="Y" name="Y" required maxlength="15">
+                <div class="error" id="YError"></div>
+            </div>
+            <div>
+                <img class="graph" src="images/graph.png" />
+            </div>
+        </div>
+
+        <div class="row2">
+            <div class="input">
+                Выберите R
+                <label><input type="checkbox" class="inputR" name="R" value="1">1</label>
+                <label><input type="checkbox" class="inputR" name="R" value="1.5">1.5</label>
+                <label><input type="checkbox" class="inputR" name="R" value="2">2</label>
+                <label><input type="checkbox" class="inputR" name="R" value="2.5">2.5</label>
+                <label><input type="checkbox" class="inputR" name="R" value="3">3</label>
+                <div id="RError" class="error"></div>
+            </div>
+            
+            <div>
+                <input type="submit" value="Check" class="button"/>
+            </div>
+            <div>
+                <div class="table-container">
+                    <table id="result" cellspacing="0">
+                        <tr>
+                            <th>X</th>
+                            <th>Y</th>
+                            <th>R</th>
+                            <th>Result</th>
+                            <th>Time</th>
+                            <th>Exec</th>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    </form>
+</body>
+</html>
